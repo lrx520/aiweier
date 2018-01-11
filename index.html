@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>艾薇儿</title>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <style>
+        #search{
+            width:10rem;
+            height:1.333rem;
+            margin:0 auto;
+            background: url("img/search.jpg");
+            border-bottom: 1px solid #e1d9d9;
+        }
+        #search #click i{
+            width:0.426rem;
+            height:0.426rem;
+            background-image: url(img/xx.png);
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            background-size: 100%;
+            float: left;
+            margin-top: 0.5rem;
+            margin-left: 0.4rem;
+            position: initial;
+        }
+        #search #click #AI{
+            width:3.04rem;
+            height:1.066rem;
+            margin-left: 0.906rem;
+        }
+        #search #click #AI img{
+            width: 3rem;
+            height: 1rem;
+            margin-top: 0.166rem;
+        }
+        #search #click span{
+            position: absolute;
+            top: 0.3rem;
+            color: #faf1f1;
+            margin-left: 4rem;
+            font-size: 12px;
+        }
+        [data-dpr="2"] #search #click span{
+            font-size: 24px;
+        }
+        [data-dpr="3"] #search #click span{
+            font-size: 36px;
+        }
+        #search #click p{
+            position: absolute;
+            top: 0.7rem;
+            color: #e1d9d9;
+            margin-left: 4rem;
+            font-size: 12px;
+            line-height: 1.7;
+        }
+        [data-dpr="2"] #search #click p{
+            font-size: 24px;
+        }
+        [data-dpr="3"] #search #click p{
+            font-size: 36px;
+        }
+        #search #click #search-p{
+            width: 2rem;
+            height: 1.3rem;
+            position: absolute;
+            top: 0;
+            margin-left: 8rem;
+            background-color: #cd2525;
+        }
+        #search #click #search-p .p{
+            color: #FFF;
+            position: absolute;
+            margin-left: 0.19rem;
+            line-height: 0.1;
+            font-size: 13px;
+        }
+        [data-dpr="2"] #search #click #search-p .p{
+            font-size: 26px;
+        }
+        [data-dpr="3"] #search #click #search-p .p{
+            font-size: 39px;
+        }
+    </style>
+</head>
+<body>
+<!--search开始-->
+<div id="search">
+    <div id="click">
+        <a href="javascript:;"><i></i></a>
+
+        <div id="AI"><img src="img/logo-1.png" alt=""></div>
+        <span>打开艾薇儿APP购物</span>
+        <p>新人领专享红包188元</p>
+        <div id="search-p">
+            <p class="p">立即打开</p>
+        </div>
+    </div>
+</div>
+<script>
+    $("#click a").click(
+            function(){
+                $('#search').hide()
+            }
+    );
+
+</script>
+<!--search结束-->
+
+<!--header部分开始-->
+<header>
+    <div class="centent">
+    <div class="wei">
+        <p><a href="javascript:;">淘</a></p>
+    </div>
+    <div class="city">
+        <select onchange="selectCity()" id="sheng">
+            <option>北京</option>
+            <option>上海</option>
+            <option>河北</option>
+            <option>山东</option>
+            <option>山西</option>
+            <option>河南</option>
+            <option>天津</option>
+            <option>杭州</option>
+            <option>湖南</option>
+            <option>甘肃</option>
+            <option>浙江</option>
+            <option>云南</option>
+            <option>四川</option>
+        </select>
+    </div>
+    <div class="input" style="margin-top: -0.25rem">
+        <i class="iconfont icon-fangdajing"></i>
+        <input type="text" placeholder="冬季连衣裙">
+    </div>
+    <div class="i"><a href="denlu.index.html"><i class="iconfont icon-zhanghao"></i></a></div>
+    </div>
+</header>
+<!--header部分结束-->
+
+
+<!--contanter部分开始-->
+<div id="contanter">
+    <ul>
+        <li class="active"><a href="javascript:;">男装</a></li>
+        <li><a href="index2.html">女装</a></li>
+        <li><a href="javascript:;">美妆</a></li>
+        <li><a href="javascript:;">居家</a></li>
+        <li><a href="javascript:;">母婴</a></li>
+    </ul>
+</div>
+<!--contanter部分结束-->
+
+
+<!--banner开始-->
+<div class="banner">
+    <div id="pic">
+        <img src="img/banner.jpg" alt="">
+        <img src="img/banner1.jpg" alt="">
+        <img src="img/banner2.jpg" alt="">
+        <img src="img/banner3.jpg" alt="">
+        <img src="img/banner4.jpg" alt="">
+        <img src="img/banner5.jpg" alt="">
+        <img src="img/banner6.jpg" alt="">
+        <img src="img/banner8.jpg" alt="">
+        <img src="img/banner9.jpg" alt="">
+    </div>
+    <div id="dian">
+        <span class="span1"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<script>
+    $(function(){
+        var n=0;
+        function run(){
+            n++;
+            if(n==9){
+                n=0;
+            }
+            //n=(n==5)?0:n;
+            $("#pic img").eq(n).fadeIn(1000).siblings("img").fadeOut(1000);
+            $("#dian span").eq(n).addClass("span1").siblings("span").removeClass("span1");
+        }
+        var timer=setInterval(run,2000);
+        $("#dian span").hover(function(){
+            clearInterval(timer);
+            var n=$(this).index();
+            $("#pic img").eq(n).fadeIn(1000).siblings("img").fadeOut(1000);
+            $("#dian span").eq(n).addClass("span1").siblings("span").removeClass("span1");
+        },function(){
+            timer=setInterval(run,2000)
+        })
+        $("#dian span").mouseenter(function(){
+            clearInterval(timer);
+            n=$(this).index();
+            $("#pic img").eq(n).fadeIn(1000).siblings("img").fadeOut(1000);
+            $("#dian span").eq(n).addClass("span1").siblings("span").removeClass("span1");
+        }).mouseleave(function(){
+            timer=setInterval(run,2000)
+        })
+    })
+
+</script>
+<!--banner结束-->
+
+
+<!--view部分开始-->
+<div class="view">
+    <div class="top">
+        <ul>
+            <li>
+                <img src="img/huafei.png" alt="">
+                <p style="padding-left: 0.2rem">充值</p>
+            </li>
+            <li>
+                <img src="img/quanpiubang.png" alt="">
+                <p>全球榜</p>
+            </li>
+            <li>
+                <img src="img/wuliu.png" alt="">
+                <p style="padding-left: 0.2rem">物流</p>
+            </li>
+            <li>
+                <img src="img/chaoshi.png" alt="">
+                <p style="padding-left: 0.2rem">超市</p>
+            </li>
+            <li>
+                <img src="img/linjuan.png" alt="">
+                <p style="padding-left: 0.2rem">领劵</p>
+            </li>
+        </ul>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li>
+                <img src="img/jingdou.png" alt="">
+                <p>领金豆</p>
+            </li>
+            <li>
+                <img src="img/shenxie.png" alt="">
+                <p>生鲜</p>
+            </li>
+            <li>
+                <img src="img/zhuangqian.png" alt="">
+                <p style="padding-left: 0.2rem">赚钱</p>
+            </li>
+            <li>
+                <img src="img/yifu.png" alt="">
+                <p style="padding-left: 0.2rem">衣服</p>
+            </li>
+            <li>
+                <img src="img/quanpiugou.png" alt="">
+                <p>全球购</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--view部分结束-->
+
+
+<!--main部分开始-->
+<main>
+    <div class="main-one">
+        <div class="one-1">
+            <span>新手专区</span>
+        </div>
+        <div class="one-2"></div>
+        <div class="one-3"></div>
+        <a href="index3.html"><div class="one-4"></div></a>
+    </div>
+    <div class="main-two">
+        <div class="one-1">
+            <span>品牌特卖</span>
+        </div>
+        <div class="two-2"></div>
+        <div class="two-3"></div>
+        <div class="two-4"></div>
+    </div>
+    <div class="main-three">
+        <div class="three-1">
+            <span>精品推荐</span>
+        </div>
+        <div class="three-2"></div>
+        <div class="three-3"></div>
+        <div class="three-4"></div>
+    </div>
+    <div class="main-four"></div>
+    <div class="main-five">
+        <div class="span">♦ 热门市场 ♦</div>
+    </div>
+    <div class="main-six">
+        <div class="six-one">
+            <div class="Img1">
+                <img src="img/nvzhuang1.webp" alt="">
+                <p>199减100-新客大赏。跨品牌满199减100，上不封顶</p>
+                <span><a href="javascript:;">立即订购</a></span>
+            </div>
+            <div class="Img2">
+                <img src="img/nvzhuang2.webp" alt="">
+                <p>凯撒世家KAISASEGA.跨品牌满199减100，上不封顶</p>
+                <span><a href="javascript:;">立即订购</a></span>
+            </div>
+            <div class="Img3">
+                <img src="img/nvzhuang3.webp" alt="">
+                <p>优衣美女装新客专场.跨品牌满199减100，上不封顶</p>
+                <span><a href="javascript:;">立即订购</a></span>
+            </div>
+            <div class="Img4">
+                <img src="img/nvzhuang4.webp" alt="">
+                <p>199减100-新客大赏。跨品牌满199减100，上不封顶</p>
+                <span><a href="javascript:;">立即订购</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="main-seven">
+        <div class="span">♦ 猜你喜欢 ♦</div>
+        <div class="Img5"></div>
+        <div class="span-p"><a href="javascript:;" class="active"><span>满199减100专区</span></a></div>
+        <div class="span-pp"><a href="javascript:;"><span>满298减80专区</span></a></div>
+    </div>
+    <div class="main-eight">
+        <div class="IMAGES-1">
+            <img src="img/qiudong1.jpg" alt="">
+            <p>女款2017秋冬时尚休闲V领绣花宽松套头毛衣女</p>
+            <span>¥299 <a href="">¥999</a></span>
+        </div>
+        <div class="IMAGES-2">
+            <img src="img/qiudong2.jpg" alt="">
+            <p>女款2017秋冬纯色简约百搭半高领修身针织打底衫</p>
+            <span>¥129 <a href="">¥639</a></span>
+        </div>
+        <div class="IMAGES-3">
+            <img src="img/qiudong3.jpg" alt="">
+            <p>女款秋冬慵懒风宽松百搭竖纹套头高领女士毛衣女</p>
+            <span>¥239 <a href="">¥799</a></span>
+        </div>
+        <div class="IMAGES-4">
+            <img src="img/qiudong4.jpg" alt="">
+            <p>2017新品秋冬个性圆领镂空纯色套头女士毛衣</p>
+            <span>¥149 <a href="">¥499</a></span>
+        </div>
+        <div class="IMAGES-5">
+            <img src="img/qiudong5.jpg" alt="">
+            <p>女款秋冬时尚波浪交叉领收腰中长款针织连衣裙</p>
+            <span>¥279 <a href="">¥859</a></span>
+        </div>
+        <div class="IMAGES-6">
+            <img src="img/qiudong6.jpg" alt="">
+            <p>女款时尚休闲破洞撞色麻花半高领套头毛衣女生</p>
+            <span>¥189 <a href="">¥620</a></span>
+        </div>
+    </div>
+</main>
+<!--main部分结束-->
+
+<!--footer部分开始-->
+<footer>
+    <div>
+        <ul>
+            <li><a href=""><img src="img/a-home.png" alt=""></a></li>
+            <li><a href=""><img src="img/n-catergry.png" alt=""></a></li>
+            <li><a href=""><img src="img/n-find.png" alt=""></a></li>
+            <li><a href=""><img src="img/n-cart.png" alt=""></a></li>
+            <li><a href="geren.html"><img src="img/n-me.png" alt=""></a></li>
+        </ul>
+    </div>
+</footer>
+<!--footer部分结束-->
+</body>
+</html>

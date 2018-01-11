@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    width:10rem;
+    margin: auto;
+    height:0.666rem;
+
+}
+header .logo{
+    width:10rem;
+    height:1.666rem;
+    background-image: url(../img/logo-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 1rem;
+    background-size: 50%;
+}
+.banner{
+    width:10rem;
+    height:5rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+.banner .phone{
+    width:10rem;
+    height:5rem;
+    margin-top: 2rem;
+}
+.banner .phone-1{
+    height: 1.3rem;
+    position: relative;
+
+    background: #fff;
+    padding-left: 0.5rem;
+    padding-right: 0;
+
+    border-bottom: 1px solid #e7e7e7;
+}
+.banner .phone-1 label{
+    float: left;
+    font-size: 16px;
+
+    height: 0.5rem;
+    line-height: 1.2rem;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+[data-dpr="2"] .banner .phone-1 label{
+    font-size: 32px;
+}
+[data-dpr="3"] .banner .phone-1 label{
+    font-size: 48px;
+}
+.banner .phone-1 input{
+    float: left;
+    height:1rem;
+    font-size: 16px;
+    background-color: #fff!important;
+    border: none;
+    padding-left: 0.63rem;
+    padding-top: 0.3rem;
+    color: #222;
+}
+[data-dpr="2"] .banner .phone-1 input{
+    font-size: 32px;
+}
+[data-dpr="3"] .banner .phone-1 input{
+    font-size: 48px;
+}
+.banner .phone-2{
+    height: 1.3rem;
+    position: relative;
+
+    background: #fff;
+    padding-left: 0.5rem;
+    padding-right: 0;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid #e7e7e7;
+}
+.banner .phone-2 label{
+    float: left;
+    font-size: 16px;
+
+    height: 0.5rem;
+    line-height: 1.2rem;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+[data-dpr="2"] .banner .phone-2 label{
+    font-size: 32px;
+}
+[data-dpr="3"] .banner .phone-2 label{
+    font-size: 48px;
+}
+.banner .phone-2 input{
+    float: left;
+    height:1rem;
+    font-size: 16px;
+    background-color: #fff!important;
+    border: none;
+    padding-left: 0.63rem;
+    padding-top: 0.3rem;
+    color: #222;
+}
+[data-dpr="2"] .banner .phone-2 input{
+    font-size: 32px;
+}
+[data-dpr="3"] .banner .phone-2 input{
+    font-size: 48px;
+}
+.banner .phone-2 button{
+    background-color: transparent;
+    font-size: 16px;
+    border: 0 none;
+    border-left: 1px solid #e7e7e7;
+    outline: 0 none;
+    padding: 0;
+    position: absolute;
+    height: 1.8rem;
+    padding-left: -6.4em;
+    margin-left: -1.5rem;
+    top: -0.4rem;
+    width: 3rem;
+    right:0;
+}
+[data-dpr="2"] .banner .phone-2 button{
+    font-size: 32px;
+}
+[data-dpr="3"] .banner .phone-2 button{
+    font-size: 48px;
+}
+.banner .submit{
+    background: #de3d96;
+    text-decoration: none!important;
+    text-align: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    height: 1rem;
+    line-height: 0.95rem;
+    margin-top:1rem;
+    margin-left: 0.5rem;
+    pointer-events: auto;
+    width: 90%;
+}
+.banner .submit a{
+    color: #ee9eca;
+}
+[data-dpr="2"] .banner .submit{
+    font-size: 32px;
+}
+[data-dpr="3"] .banner .submit{
+    font-size: 48px;
+}
+.banner .submit p{
+    padding-top: 0.1rem;
+    letter-spacing: .02rem;
+    font-size: 12px;
+    color: #98989f;
+}
+[data-dpr="2"] .banner .submit p{
+    font-size: 24px;
+}
+[data-dpr="3"] .banner .submit p{
+    font-size: 36px;
+}

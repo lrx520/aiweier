@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    width: 10rem;
+    height: 6.453rem;
+    margin: auto;
+    background-image: url(../img/a04a322b-7f23-43a0-9414-65d783c97655_384x484_70.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    box-sizing: border-box;
+    background-position: 50%;
+    border-bottom: 1px solid #989ba0;
+}
+.banner{
+    width:10rem;
+    margin: auto;
+
+}
+.banner .top{
+    width:10rem;
+    height:2rem;
+    position: relative;
+}
+.banner .top .left{
+    width:1.88rem;
+    height:0.986rem;
+    background-image: url(../img/xiazai.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+
+}
+.banner .top .left span{
+    color: #ffd075;
+    font-size: 15px;
+    padding-left: 0.55rem;
+}
+[data-dpr="2"] .banner .top .left span{
+    font-size: 30px;
+}
+[data-dpr="3"] .banner .top .left span{
+    font-size: 45px;
+}
+.banner .top .center{
+    width:3.786rem;
+    height:0.986rem;
+    margin-left: 2.5rem;
+}
+.banner .top .center span{
+    position: absolute;
+    top:0;
+    font-size: 13px;
+}
+[data-dpr="2"] .banner .top .center span{
+    font-size: 30px;
+}
+[data-dpr="3"] .banner .top .center span{
+    font-size: 45px;
+}
+.banner .top .center p{
+    position: absolute;
+    font-size: 12px;
+    top: 0.45rem;
+    color: #585c64;
+}
+[data-dpr="2"] .banner .top .center p{
+    font-size: 24px;
+}
+[data-dpr="3"] .banner .top .center p{
+    font-size: 36px;
+}
+.banner .top .right{
+    width:1.893rem;
+    height:0.706rem;
+    position: absolute;
+    right: .4rem;
+    top: .1rem;
+}
+.banner .top .right span{
+    width:1.893rem;
+    height:0.706rem;
+    color: #e4007f;
+    line-height: .64rem;
+
+
+}
+.banner .top .right span a{
+    width:1.893rem;
+    height:0.706rem;
+    text-decoration: none;
+    border: 2px solid #e4007f;
+    color: #e4007f;
+    font-size: 12px;
+    border-radius: 0.03rem;
+    line-height: .64rem;
+    padding-left: 0.3rem;
+    padding-top: 0.2rem;
+    padding-right: 0.3rem;
+    padding-bottom: 0.2rem;
+    margin-left: -0.3rem;
+}
+[data-dpr="2"] .banner .top .right span a{
+    font-size: 24px;
+}
+[data-dpr="3"] .banner .top .right span a{
+    font-size: 36px;
+}
+.banner .centent{
+    width:10rem;
+    height:3rem;
+}
+.banner .centent .font .left span{
+    width:5.453rem;
+    padding-left: 0.3rem;
+    height:0.626rem;
+    font-size: 13%;
+    color: #98989f;
+}
+[data-dpr="2"] .banner .centent .font .left span{
+    font-size: 26px;
+}
+[data-dpr="3"] .banner .centent .font .left span{
+    font-size: 39px;
+}
+.banner .centent .font span{
+    width:5.453rem;
+    height:0.626rem;
+    font-size: 12px;
+    color: #98989f;
+}
+.banner .centent .font .left a{
+    color: #e748a6;
+    line-height: .45333rem;
+    display: inline-block;
+    font-size: .42667rem;
+    padding: .05333rem .16rem;
+    vertical-align: middle;
+    border: 1px solid #e748a6;
+    text-decoration: none;
+    border-left: 0;
+    border-radius: 0 .10667rem .10667rem 0;
+    margin-top: -0.2rem;
+}
+.banner .centent .font .left .active{
+    color: #fff;
+    line-height: .45333rem;
+    display: inline-block;
+    font-size: .42667rem;
+    padding: .05333rem .16rem;
+    vertical-align: middle;
+    border: 1px solid #e748a6;
+    background: #e748a6;
+    border-left: 0;
+    border-radius: 0 .10667rem .10667rem 0;
+}
+.banner .centent .font .left a:hover{
+    color: #fff;
+    line-height: .45333rem;
+    display: inline-block;
+    font-size: .42667rem;
+    padding: .05333rem .16rem;
+    vertical-align: middle;
+    border: 1px solid #e748a6;
+    background: #e748a6;
+    border-left: 0;
+    border-radius: 0 .10667rem .10667rem 0;
+}
+.banner .centent .font .right{
+    position: absolute;
+    float: right;
+    width: 1.466rem;
+}
+.banner .centent .font .right img{
+    position: absolute;
+    float: right;
+    top: -0.5rem;
+    margin-left: 7.98rem;
+    width:1.5rem;
+}
+.banner .centent .font .p{
+    margin: .4rem .32rem 0;
+    font-size: .37333rem;
+    line-height: .48rem;
+    color: #404040;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed #989ba0;
+}
+.banner .bottom{
+    width:10rem;
+    margin-top: -0.8rem;
+}
+.banner .bottom ul{
+    list-style: none;
+    padding-left: 0.35rem;
+}
+.banner .bottom ul li{
+    line-height: 1rem;
+    font-size: 13px;
+}
+[data-dpr="2"] .banner .bottom ul li{
+    font-size: 26px;
+}
+[data-dpr="3"] .banner .bottom ul li{
+    font-size: 39px;
+}
+.banner .bottom ul li a{
+    line-height: 1rem;
+    border:1px solid #5682c1;
+    color: #5682c1;
+    font-size: 13px;
+    margin-right: 0.5rem;
+}
+[data-dpr="2"] .banner .bottom ul li a{
+    font-size: 26px;
+}
+[data-dpr="3"] .banner .bottom ul li a{
+    font-size: 39px;
+}
+.banner .bottom .UI li{
+    line-height: 1rem;
+    font-size: 15px;
+}
+[data-dpr="2"] .banner .bottom .UI li{
+    font-size: 30px;
+}
+[data-dpr="3"] .banner .bottom .UI li{
+    font-size: 45px;
+}
+.banner .bottom .UI li .a{
+    line-height: 1rem;
+    border: 2px solid #de3d96;
+    color: #de3d96;
+    font-size: 13px;
+    width: 4rem;
+    display: block;
+    text-align: center;
+}
+[data-dpr="2"] .banner .bottom .UI li .a{
+    font-size: 26px;
+}
+[data-dpr="3"] .banner .bottom .UI li .a{
+    font-size: 39px;
+}
+.banner .bottom-bottom{
+    width: 10rem;
+    height:2.346rem;
+    background-image: url(../img/1502443448261.png);
+    background-repeat: no-repeat;
+    background-size: 93%;
+    background-position: 50% 50%;
+    margin-top: 1rem;
+}
+main{
+    width:10rem;
+    height:11rem;
+    margin:auto;
+}
+main .span{
+    width:10rem;
+    height:0.493rem;
+    padding-top: 0.5rem;
+    margin-top: 0.9rem;
+    border-top: 1px solid #d2d2d2;
+}
+main .span span{
+    color: #000;
+    font-size: 15px;
+    padding-left: 0.35rem;
+    font-weight: 700;
+}
+[data-dpr="2"] main .span span{
+    font-size: 30px;
+}
+[data-dpr="3"] main .span span{
+    font-size: 45px;
+}
+main .text{
+    width:10rem;
+    height:0.493rem;
+    margin-top: 0.9rem;
+}
+main .text ul{
+    list-style: none;
+    padding-left: 0.3rem;
+}
+main .text ul li{
+    line-height: 2;
+    color: #7c8385;
+    font-size: 13px;
+}
+[data-dpr="2"] main .text ul li{
+    font-size: 26px;
+}
+[data-dpr="3"] main .text ul li{
+    font-size: 39px;
+}

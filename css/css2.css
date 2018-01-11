@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+header{
+    width:10rem;
+    height:3.48rem;
+    margin: 0 auto;
+}
+header content{
+    width:10rem;
+    height:3.48rem;
+    position: relative;
+}
+header .span1{
+    position: absolute;
+    top:2.186rem;
+    font-size: 20px;
+    margin-left: 3.5rem;
+}
+[data-dpr="2"] header .span1{
+    font-size: 40px;
+}
+[data-dpr="3"] header .span1{
+    font-size: 60px;
+}
+header .span1 a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+[data-dpr="2"] header .span1 a{
+    font-size: 40px;
+}
+[data-dpr="3"] header .span1 a{
+    font-size: 60px;
+}
+header span{
+    position: absolute;
+    top:2.186rem;
+    font-size: 20px;
+    margin-left: 5rem;
+}
+[data-dpr="2"] header span{
+    font-size: 40px;
+}
+[data-dpr="3"] header span{
+    font-size: 60px;
+}
+.banner{
+    width:10rem;
+    height:4.813rem;
+    position: relative;
+    margin: auto;
+    margin-top: 1.4rem;
+}
+.banner .Den{
+    width:10rem;
+    height:4.813rem;
+}
+.banner .Den ul{
+    position: absolute;
+    margin-left: 0.95rem;
+}
+.banner .Den ul li{
+    padding-top: 0.3rem;
+}
+.banner .Den ul li img{
+    width: 1.586rem;
+    height: 1rem;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+    margin-left: 1.5rem;
+}
+.banner .Den ul li .wei{
+    width:8rem;
+    display: block;
+    height:1.3rem;
+    border-radius: 1.5rem;
+    background: rgb(9, 187, 7);
+}
+.banner .Den ul li a{
+    text-decoration: none;
+    width:8rem;
+    display: block;
+    height:1.3rem;
+    border-radius: 1.5rem;
+    background: #0ab8f5;
+}
+.banner .Den ul li a p{
+    margin-top: -0.69rem;
+    margin-left: 4.5rem;
+    color: #fff;
+    font-size: 13px;
+}
+[data-dpr="2"] .banner .Den ul li a p{
+    font-size: 26px;
+}
+[data-dpr="3"] .banner .Den ul li a p{
+    font-size: 39px;
+}
+main{
+    width:10rem;
+    height:1.4rem;
+    margin: auto;
+}
+main .loger{
+    width:10rem;
+    height:1.4rem;
+}
+main .loger span{
+    font-size: 13px;
+    color: #888888;
+    margin-left: 3.9rem;
+
+}
+[data-dpr="2"] main .loger span{
+    font-size: 26px;
+}
+[data-dpr="3"] main .loger span{
+    font-size: 39px;
+}
+footer{
+    width:10rem;
+    height:3rem;
+    margin: auto;
+}
+footer .foot{
+    width:10rem;
+    height:3rem;
+    margin: auto;
+}
+footer .foot .img ul{
+    height:2rem;
+    padding-left: 1.5rem;
+}
+footer .foot .img ul li{
+    float: left;
+    padding-left: 1.4rem;
+    padding-top: 0.5rem;
+}
+footer .foot .img ul li img{
+    width:1.2rem;
+}
+footer .foot .p{
+    height:2rem;
+    padding-left: 1.5rem;
+}
+footer .foot .p p{
+    float: left;
+    padding-left: 1.4rem;
+    padding-top: 0.5rem;
+    font-size: 13px;
+    color: #666;
+}
+[data-dpr="2"] footer .foot .p p{
+    font-size: 26px;
+}
+[data-dpr="3"] footer .foot .p p{
+    font-size: 39px;
+}
