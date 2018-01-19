@@ -101,11 +101,12 @@ main .bottom{
 main .bottom ul{
     list-style: none;
     position: absolute;
-    margin-left: 0.5rem;
 }
 main .bottom ul li{
+    width: 2rem;
+    margin-left: 0.5rem;
+    display: block;
     float: left;
-    padding-left: 0.5rem;
     font-size: 12px;
 }
 [data-dpr="2"] main .bottom ul li{

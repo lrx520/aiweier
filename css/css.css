@@ -164,15 +164,15 @@ header .i i{
 }
 #dian{
     position: absolute;
-    top: 4.5rem;
-    left: 3.4rem;
+    top: 5rem;
+    left: 3.5rem;
     background: rgba(255, 255, 255, 0.28);
     border-radius: 2rem;
 }
 #dian span{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 0.3rem;
+    height: 0.3rem;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.36);
 }
